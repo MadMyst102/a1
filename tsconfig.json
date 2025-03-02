@@ -20,18 +20,13 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    },
-    "baseUrl": ".",
-    "types": ["react", "react-dom", "node"],
-    "jsxImportSource": "react",
-    "noImplicitAny": false
+    }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "components/**/*.tsx"
-  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
